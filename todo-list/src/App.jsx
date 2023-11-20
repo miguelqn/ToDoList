@@ -1,12 +1,12 @@
 import './App.css'
 import { useState, useEffect } from 'react'
 import data from './components/data.json'
-import TaskForm from './components/TaskForm'
-import TaskList from './components/TaskList'
+import TaskForm from './components/TaskForm/TaskForm'
+import TaskList from './components/TaskList/TaskList'
 import Toast from './components/Toast/Toast'
 
 function App() {
-  // De momento usando datos hardcodeados en un JSON
+  // Datos dummies para pruebas iniciales
   //const [tareas, setTareas] = useState(data)
   const [tareas, setTareas] = useState([])
   const [showToast, setToast] = useState(false)
