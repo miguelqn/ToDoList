@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import './Toast.css'
 
 function Toast({setToast}) {
-
+    // Al no pasarle ningun parametro se ejecuta al inicio 1 vez
     useEffect(() => {
         setTimeout(() => {
             setToast(false)

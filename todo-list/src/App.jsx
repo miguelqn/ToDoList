@@ -9,6 +9,7 @@ function App() {
   // Datos dummies para pruebas iniciales
   //const [tareas, setTareas] = useState(data)
   const [tareas, setTareas] = useState([])
+  
   const [showToast, setToast] = useState(false)
 
   useEffect(() => {
