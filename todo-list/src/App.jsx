@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 import data from './components/data.json'
+import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList'
 
 function App() {
@@ -25,10 +26,20 @@ function App() {
     setTareas([...tareas].filter(tarea => tarea.id !== id))
   }
 
+  const addTarea = (nuevaTarea) => {
+    //console.log('Nueva tarea', nuevaTarea)
+    /* Creamos una nueva tarea, con el id en base a la fecha para simplificar, 
+    por defecto el completado va en falso */
+    let newTarea = {id : +new Date(), nombre: nuevaTarea, completada: false}
+    // Seteamos las tareas con la nueva tarea ingresada
+    setTareas([...tareas, newTarea])
+  }
+
   return (
     <>
       <h1>ToDo - List</h1>
       <div>
+          <TaskForm addTarea={addTarea}/>
           <TaskList 
           tareas={tareas} 
           onTareaCompletada={onTareaCompletada} 
