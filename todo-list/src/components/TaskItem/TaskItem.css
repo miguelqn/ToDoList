@@ -1,0 +1,28 @@
+.taskitem{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.taskitem input{
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+}
+
+.taskitem label{
+    padding-left: 10px;
+}
+
+.btn{
+    background-color: rgb(182, 0, 0);
+    position: absolute;
+    right: 1em; 
+    top: 5;
+}

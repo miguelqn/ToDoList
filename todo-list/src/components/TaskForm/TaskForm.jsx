@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './TaskForm.css'
 
 function TaskForm({addTarea}) {
 
@@ -25,7 +26,7 @@ function TaskForm({addTarea}) {
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder='Ingrese una tarea' 
         value={nuevaTarea} onChange={handleChange}/>
-        <button>Agregar</button>
+        <button type='button'>Agregar</button>
       </form>
     </div>
   )

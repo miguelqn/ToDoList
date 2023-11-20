@@ -1,0 +1,15 @@
+.taskform{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.taskform input{
+    font-size: large;
+}
+
+.taskform button{
+    background-color: green;
+    margin-left: 10px;
+    height: 100%;
+}

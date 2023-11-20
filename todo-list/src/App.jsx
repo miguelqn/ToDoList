@@ -48,8 +48,8 @@ function App() {
 
   return (
     <>
-      <h1>ToDo - List</h1>
-      <div>
+      <h1>Lista de Tareas</h1>
+      <div className='app'>
           <TaskForm addTarea={addTarea}/>
           <TaskList 
           tareas={tareas} 
