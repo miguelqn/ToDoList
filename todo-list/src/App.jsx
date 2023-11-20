@@ -1,13 +1,23 @@
 import './App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import data from './components/data.json'
 import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList'
+import Toast from './components/Toast/Toast'
 
 function App() {
   // De momento usando datos hardcodeados en un JSON
   //const [tareas, setTareas] = useState(data)
   const [tareas, setTareas] = useState([])
+  const [showToast, setToast] = useState(false)
+
+  useEffect(() => {
+    //console.log('Lista de tareas actualizada')
+    /* Al cambiar el estado de la lista de tareas, se muestra un
+    pequeño toast, que se cierra automaticamente luego de unos segundos*/
+    setToast(true)
+  },
+  [tareas])
 
   const onTareaCompletada = (id) => {
     //console.log('Tarea marcada: ' + id)
@@ -45,6 +55,8 @@ function App() {
           tareas={tareas} 
           onTareaCompletada={onTareaCompletada} 
           onEliminarTarea={onEliminarTarea}/>
+
+          {showToast ? <Toast setToast={setToast}/> : ""}
       </div>
     </>
   )
