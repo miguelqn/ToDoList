@@ -6,7 +6,8 @@ import TaskList from './components/TaskList'
 
 function App() {
   // De momento usando datos hardcodeados en un JSON
-  const [tareas, setTareas] = useState(data)
+  //const [tareas, setTareas] = useState(data)
+  const [tareas, setTareas] = useState([])
 
   const onTareaCompletada = (id) => {
     //console.log('Tarea marcada: ' + id)
