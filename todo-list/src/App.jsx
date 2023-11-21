@@ -17,6 +17,8 @@ function App() {
     /* Al cambiar el estado de la lista de tareas, se muestra un
     pequeño toast, que se cierra automaticamente luego de unos segundos*/
     setToast(true)
+
+    // Seguir probando con el LocalStorage
     localStorage.setItem('tareas', {tareas})
   },
   [tareas])
