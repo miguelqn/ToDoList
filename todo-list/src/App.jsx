@@ -9,7 +9,7 @@ function App() {
   // Datos dummies para pruebas iniciales
   //const [tareas, setTareas] = useState(data)
   const [tareas, setTareas] = useState([])
-  
+
   const [showToast, setToast] = useState(false)
 
   useEffect(() => {
@@ -17,6 +17,7 @@ function App() {
     /* Al cambiar el estado de la lista de tareas, se muestra un
     pequeño toast, que se cierra automaticamente luego de unos segundos*/
     setToast(true)
+    localStorage.setItem('tareas', {tareas})
   },
   [tareas])
 

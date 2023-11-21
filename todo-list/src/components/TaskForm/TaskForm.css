@@ -2,10 +2,15 @@
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .taskform input{
     font-size: large;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    width: 40%;
 }
 
 .taskform button{

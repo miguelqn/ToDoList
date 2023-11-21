@@ -26,7 +26,7 @@ function TaskForm({addTarea}) {
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder='Ingrese una tarea' 
         value={nuevaTarea} onChange={handleChange}/>
-        <button type='button'>Agregar</button>
+        <button type='button' onClick={handleSubmit}>Agregar</button>
       </form>
     </div>
   )
