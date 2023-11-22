@@ -6,9 +6,12 @@ import TaskList from './components/TaskList/TaskList'
 import Toast from './components/Toast/Toast'
 
 function App() {
+
+  const [tareas, setTareas] = useState(JSON.parse(localStorage.getItem("tareas")) || [])
+
   // Datos dummies para pruebas iniciales
   //const [tareas, setTareas] = useState(data)
-  const [tareas, setTareas] = useState([])
+  //const [tareas, setTareas] = useState([])
 
   const [showToast, setToast] = useState(false)
 
@@ -19,7 +22,7 @@ function App() {
     setToast(true)
 
     // Seguir probando con el LocalStorage
-    localStorage.setItem('tareas', {tareas})
+    localStorage.setItem("tareas", JSON.stringify(tareas))
   },
   [tareas])
 
