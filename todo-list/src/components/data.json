@@ -1,0 +1,20 @@
+[{
+    "id": 1,
+    "nombre": "Lavar la ropa",
+    "completada": false
+},
+{
+    "id": 2,
+    "nombre": "Peinar a Pancha",
+    "completada": false
+},
+{
+    "id": 3,
+    "nombre": "Cocinar",
+    "completada": false
+},
+{
+    "id": 4,
+    "nombre": "Limpiar la mesa",
+    "completada": true
+}]
