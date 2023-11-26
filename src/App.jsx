@@ -4,6 +4,7 @@ import data from './components/data.json'
 import TaskForm from './components/TaskForm/TaskForm'
 import TaskList from './components/TaskList/TaskList'
 import Toast from './components/Toast/Toast'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
@@ -53,8 +54,8 @@ function App() {
 
   return (
     <>
-      <h1>Lista de Tareas</h1>
       <div className='app'>
+          <Navbar />
           <TaskForm addTarea={addTarea}/>
           <TaskList 
           tareas={tareas} 
