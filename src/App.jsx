@@ -7,11 +7,11 @@ import Toast from './components/Toast/Toast'
 
 function App() {
 
+  // Obtiene un JSON con datos guardados en el LocalStorage, de no encontrarlo usa un array vacio
   const [tareas, setTareas] = useState(JSON.parse(localStorage.getItem("tareas")) || [])
 
   // Datos dummies para pruebas iniciales
   //const [tareas, setTareas] = useState(data)
-  //const [tareas, setTareas] = useState([])
 
   const [showToast, setToast] = useState(false)
 
@@ -21,7 +21,7 @@ function App() {
     pequeño toast, que se cierra automaticamente luego de unos segundos*/
     setToast(true)
 
-    // Seguir probando con el LocalStorage
+    // Se guarda la lista en el LocalStorage con el nombre "tareas"
     localStorage.setItem("tareas", JSON.stringify(tareas))
   },
   [tareas])
@@ -38,14 +38,12 @@ function App() {
   }
 
   const onEliminarTarea = (id) => {
-    //console.log('Tarea borrada: ' + id)
     /* Se hace una copia de la lista, filtrando por el id de la tarea eliminada.
     Se mantienen todas aquellas que tengan un id diferente al del parametro */
     setTareas([...tareas].filter(tarea => tarea.id !== id))
   }
 
   const addTarea = (nuevaTarea) => {
-    //console.log('Nueva tarea', nuevaTarea)
     /* Creamos una nueva tarea, con el id en base a la fecha para simplificar, 
     por defecto el completado va en falso */
     let newTarea = {id : +new Date(), nombre: nuevaTarea, completada: false}
