@@ -11,9 +11,6 @@ function App() {
   // Obtiene un JSON con datos guardados en el LocalStorage, de no encontrarlo usa un array vacio
   const [tareas, setTareas] = useState(JSON.parse(localStorage.getItem("tareas")) || [])
 
-  // Datos dummies para pruebas iniciales
-  //const [tareas, setTareas] = useState(data)
-
   const [showToast, setToast] = useState(false)
 
   useEffect(() => {

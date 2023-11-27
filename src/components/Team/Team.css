@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+  }
+
+.memberlist {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

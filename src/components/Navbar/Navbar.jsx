@@ -9,7 +9,7 @@ function Navbar() {
             <div className='nav-elements'>
                 <ul>
                     <li>
-                        <Link to={"/"}>LISTA</Link>
+                        <Link to={"/"}>TAREAS</Link>
                     </li>
                     <li>
                         <Link to={"/equipo"}>EQUIPO</Link>
