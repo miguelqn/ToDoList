@@ -4,14 +4,12 @@ import data from './components/data.json'
 import TaskForm from './components/TaskForm/TaskForm'
 import TaskList from './components/TaskList/TaskList'
 import Toast from './components/Toast/Toast'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
   // Obtiene un JSON con datos guardados en el LocalStorage, de no encontrarlo usa un array vacio
   const [tareas, setTareas] = useState(JSON.parse(localStorage.getItem("tareas")) || [])
-
-  // Datos dummies para pruebas iniciales
-  //const [tareas, setTareas] = useState(data)
 
   const [showToast, setToast] = useState(false)
 
@@ -53,8 +51,8 @@ function App() {
 
   return (
     <>
-      <h1>Lista de Tareas</h1>
       <div className='app'>
+          <Navbar />
           <TaskForm addTarea={addTarea}/>
           <TaskList 
           tareas={tareas} 

@@ -1,20 +1,30 @@
 [{
-    "id": 1,
-    "nombre": "Lavar la ropa",
-    "completada": false
+    "name": "Miguel Quispe",
+    "picture": "src/assets/images/mquispe.jpg",
+    "description": "Estudiante de Analista Programador Universitario en la UNPSJB.",
+    "location": "Chubut, Argentina",
+    "mail": "miguelqn500@gmail.com",
+    "tel" : "+54 9 2945 55-7738",
+    "github": "https://github.com/miguelqn",
+    "linkedin": "https://www.linkedin.com/in/miguel-angel-quispe"
 },
 {
-    "id": 2,
-    "nombre": "Peinar a Pancha",
-    "completada": false
+    "name": "Ivan Dias Marques",
+    "picture": "src/assets/images/ivan.png",
+    "description": "Estudiante de Ingeniería Informática de la UNAJ.",
+    "location": "Argentina",
+    "mail": "imperiamon@gmail.com",
+    "tel" : "+54 9 11 2400-2596",
+    "github": "https://github.com/IvanDiasMarques",
+    "linkedin": "https://www.linkedin.com/"
 },
 {
-    "id": 3,
-    "nombre": "Cocinar",
-    "completada": false
-},
-{
-    "id": 4,
-    "nombre": "Limpiar la mesa",
-    "completada": true
+    "name": "Luis Vargas",
+    "picture": "https://avatars.githubusercontent.com/u/150152555?v=4",
+    "description": "Estudiando en Argentina Programa",
+    "location": "Argentina",
+    "mail": "luchovargas@rocketmail.com",
+    "tel" : "+54 9 2664 56-6101",
+    "github": "https://github.com/luchovargas96",
+    "linkedin": "https://www.linkedin.com/"
 }]
