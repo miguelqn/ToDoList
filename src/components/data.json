@@ -1,6 +1,6 @@
 [{
     "name": "Miguel Quispe",
-    "picture": "src/assets/images/mquispe.jpg",
+    "picture": "/src/assets/images/mquispe.jpg",
     "description": "Estudiante de Analista Programador Universitario en la UNPSJB.",
     "location": "Chubut, Argentina",
     "mail": "miguelqn500@gmail.com",
@@ -10,7 +10,7 @@
 },
 {
     "name": "Ivan Dias Marques",
-    "picture": "src/assets/images/ivan.png",
+    "picture": "/src/assets/images/ivan.png",
     "description": "Estudiante de Ingeniería Informática de la UNAJ.",
     "location": "Argentina",
     "mail": "imperiamon@gmail.com",
